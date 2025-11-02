@@ -1,0 +1,73 @@
+// src/components/sections/Testimonials/Testimonials.scss
+
+.testimonials {
+  background-color: #333333;
+  color: #fff;
+  padding: 5rem 2rem;
+  text-align: center;
+
+  &__container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+.testimonial-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #444;
+    margin-bottom: 1.5rem;
+  }
+
+  &__author {
+    color: #fff;
+    margin-bottom: 0.25rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  &__position {
+    display: block;
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+  }
+
+  &__quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+}
+
+// Estilos para los botones de navegación personalizados
+.swiper-navigation {
+  margin-top: 2rem;
+}
+
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+  background-color: var(--color-azul-petroleo);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 0.5rem;
+
+  &:hover {
+    background-color: var(--color-azul-cielo);
+  }
+}

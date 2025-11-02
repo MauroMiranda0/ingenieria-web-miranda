@@ -57,6 +57,20 @@
           "description": "Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors."
         }
       ]
-    }
+    },
+    "testimonials": [
+      {
+        "image": "/images/testimonial/01.jpg",
+        "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam",
+        "author": "Louise S. Morgan",
+        "position": "Treatment, storage, and disposal (TSD) worker"
+      },
+      {
+        "image": "/images/testimonial/01.jpg",
+        "quote": "Su dedicación al detalle y al rendimiento es simplemente excepcional. Transformaron completamente nuestra perspectiva digital.",
+        "author": "Juan Pérez",
+        "position": "Director de Innovación, FuturaCorp"
+      }
+    ]
   }
 }
