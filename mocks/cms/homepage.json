@@ -1,0 +1,17 @@
+
+{
+  "meta": {
+    "title": "Ingeniería Web Miranda | Soluciones Innovadoras",
+    "description": "Desarrollamos soluciones web de alto rendimiento enfocadas en la experiencia de usuario y el crecimiento de su negocio.",
+    "ogImage": "/images/og-image-homepage.jpg"
+  },
+  "content": {
+    "hero": {
+      "title": "Ingeniería y Diseño Para un Futuro Digital",
+      "subtitle": "Creamos experiencias web memorables que combinan estética sofisticada y rendimiento excepcional.",
+      "ctaText": "Descubre Nuestros Proyectos",
+      "ctaLink": "/proyectos",
+      "backgroundImage": "/images/hero-background.jpg"
+    }
+  }
+}
