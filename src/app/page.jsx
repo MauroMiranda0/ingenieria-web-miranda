@@ -23,7 +23,7 @@ export default async function HomePage() {
         El operador "spread" (...) pasa todas las propiedades del objeto 'contact' 
         (info, formPlaceholders, ctaText) como props individuales al componente.
       */}
-      <Contact title={contact.title} {...contact} />
+      <Contact {...contact} />
     </main>
   );
 }

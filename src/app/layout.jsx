@@ -10,19 +10,17 @@ export const metadata = {
   description: 'Sitio Web Institucional para soluciones innovadoras.',
 };
 
-// Convertimos el layout en un componente asíncrono
 export default async function RootLayout({ children }) {
-  // Obtenemos los datos que necesita el layout (en este caso, la navegación)
   const homepageData = await getHomepageData();
-  const navLinks = homepageData.navigation;
+  const { navigation, footer } = homepageData; // Extraemos 'footer'
 
   return (
     <html lang="es">
       <body>
-        {/* Pasamos los enlaces como prop al Header */}
-        <Header navLinks={navLinks} />
+        <Header navLinks={navigation} />
         {children}
-        <Footer />
+        {/* Pasamos los datos del footer como prop */}
+        <Footer footerData={footer} />
       </body>
     </html>
   );

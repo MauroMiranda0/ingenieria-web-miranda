@@ -15,6 +15,40 @@
     },
     { "label": "Contacto", "href": "#contact" }
   ],
+  "footer": {
+    "logoText": "Ingeniería Web Miranda", 
+    "slogan": "Ingeniería web que  convierte ideas en realidades digitales.",
+    "linkColumns": [
+      {
+        "title": "Services",
+        "links": [
+          { "label": "Nuestros Servicios", "href": "/services" },
+          { "label": "Agencia", "href": "/agency" }
+        ]
+      },
+      {
+        "title": "Agency",
+        "links": [
+          { "label": "Sobre Nosotros", "href": "/about" },
+          { "label": "Contacto", "href": "/contact" }
+        ]
+      }
+    ],
+    "contactInfo": {
+      "title": "Contact",
+      "email": "contact@example.com",
+      "socials": [
+        { "icon": "linkedin", "url": "https://www.linkedin.com/", "label": "LinkedIn" },
+        { "icon": "xtwitter", "url": "https://twitter.com/", "label": "X (Twitter)" },
+        { "icon": "github", "url": "https://github.com/", "label": "GitHub" }
+      ]
+    },
+    "copyrightText": "© {year} Company. All rights reserved.",
+    "privacyLink": {
+      "label": "Privacy",
+      "href": "/privacy"
+    }
+  },
   "content": {
     "hero": {
       "title": "Ingeniería y Diseño Para un Futuro Digital",
