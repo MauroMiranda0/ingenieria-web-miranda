@@ -1,0 +1,46 @@
+// src/components/layout/Footer/Footer.scss
+
+.footer {
+  background-color: var(--color-azul-petroleo);
+  color: var(--color-gris-calido);
+  padding: 2rem;
+  text-align: center;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; // Permite que los elementos se apilen en pantallas pequeñas
+    gap: 1rem;
+  }
+
+  &__copyright {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 1.5rem;
+
+    a {
+      color: var(--color-gris-calido);
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover,
+      &:focus {
+        color: var(--color-azul-cielo);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__container {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}

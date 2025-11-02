@@ -1,4 +1,7 @@
 // src/app/layout.jsx
+
+import Header from '@/components/layout/Header/Header';
+import Footer from '@/components/layout/Footer/Footer';
 import './globals.scss';
 
 export const metadata = {
@@ -9,7 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
