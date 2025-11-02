@@ -1,0 +1,41 @@
+// src/components/common/Card/Card.scss
+
+.card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 79, 110, 0.1);
+  }
+
+  &__icon-container {
+    margin-bottom: 1.5rem;
+  }
+  
+  &__icon-placeholder {
+    // Placeholder visual para el ícono
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: var(--color-azul-cielo);
+    border-radius: 50%;
+    // En una implementación real, aquí iría un SVG o una fuente de íconos.
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-azul-petroleo);
+  }
+
+  &__description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-negro-suave);
+  }
+}
