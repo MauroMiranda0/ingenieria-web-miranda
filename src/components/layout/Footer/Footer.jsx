@@ -1,8 +1,8 @@
 // src/components/layout/Footer/Footer.jsx
 import React from 'react';
 import Link from 'next/link';
-import { FaLinkedin, FaGithub } from 'react-icons/fa6';
-import { FaXTwitter } from 'react-icons/fa6'; // Icono para X/Twitter
+import Image from 'next/image'; // Importar Image
+import { FaLinkedin, FaGithub, FaXTwitter } from 'react-icons/fa6';
 import './Footer.scss';
 
 const iconMap = {
@@ -12,11 +12,10 @@ const iconMap = {
 };
 
 const Footer = ({ footerData }) => {
-  // Si no hay datos, no renderizar nada para evitar errores
   if (!footerData) return null;
 
   const {
-    logoText,
+    logoBlanco,
     slogan,
     linkColumns,
     contactInfo,
@@ -32,7 +31,16 @@ const Footer = ({ footerData }) => {
       <div className="footer__container">
         {/* Columna 1: Logo y Slogan */}
         <div className="footer__column footer__column--logo">
-          <Link href="/" className="footer__logo">{logoText}</Link>
+          <Link href="/" className="footer__logo">
+            {logoBlanco && (
+              <Image
+                src={logoBlanco}
+                alt="Ingeniería Web Miranda Logo"
+                width={200}
+                height={50}
+              />
+            )}
+          </Link>
           <p className="footer__slogan">{slogan}</p>
         </div>
 

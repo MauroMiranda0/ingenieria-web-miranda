@@ -19,10 +19,18 @@
   }
 
   &__logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color-azul-petroleo);
+    // Quitar estilos de texto
+    // font-size: 1.5rem;
+    // font-weight: 700;
+    // color: var(--color-azul-petroleo);
     text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 80px; // Altura deseada del logo en el header
+      width: auto; // El ancho se ajustará automáticamente
+    }
   }
 
   &__nav-list {
@@ -34,6 +42,7 @@
   }
 
   &__nav-link {
+    font-size: 1.2rem;
     font-weight: 500;
     color: var(--color-negro-suave);
     text-decoration: none;
@@ -49,7 +58,7 @@
   // Por ahora, solo ajustamos el espaciado.
   @media (max-width: 768px) {
     padding: 1rem;
-    
+
     &__nav {
       display: none; // Ocultamos la navegación en pantallas pequeñas (se implementará menú móvil más adelante).
     }

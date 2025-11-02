@@ -12,14 +12,16 @@ export const metadata = {
 
 export default async function RootLayout({ children }) {
   const homepageData = await getHomepageData();
-  const { navigation, footer } = homepageData; // Extraemos 'footer'
+  // Extraemos siteIdentity, navigation, y footer
+  const { siteIdentity, navigation, footer } = homepageData;
 
   return (
     <html lang="es">
       <body>
-        <Header navLinks={navigation} />
+        {/* Pasamos el logo principal al Header */}
+        <Header navLinks={navigation} logoSrc={siteIdentity.logoPrincipal} />
         {children}
-        {/* Pasamos los datos del footer como prop */}
+        {/* Pasamos todos los datos del footer al componente Footer */}
         <Footer footerData={footer} />
       </body>
     </html>

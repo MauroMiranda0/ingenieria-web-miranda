@@ -4,6 +4,9 @@
     "description": "Desarrollamos soluciones web de alto rendimiento enfocadas en la experiencia de usuario y el crecimiento de su negocio.",
     "ogImage": "/images/og-image-homepage.jpg"
   },
+  "siteIdentity": {
+    "logoPrincipal": "/images/logos/logo-principal.png"
+  },
   "navigation": [
     { "label": "Inicio", "href": "#" },
     { "label": "Agencia", "href": "#about" },
@@ -16,7 +19,7 @@
     { "label": "Contacto", "href": "#contact" }
   ],
   "footer": {
-    "logoText": "Ingeniería Web Miranda", 
+    "logoBlanco": "/images/logos/logo-blanco.png",
     "slogan": "Ingeniería web que  convierte ideas en realidades digitales.",
     "linkColumns": [
       {
@@ -43,7 +46,7 @@
         { "icon": "github", "url": "https://github.com/", "label": "GitHub" }
       ]
     },
-    "copyrightText": "© {year} Company. All rights reserved.",
+    "copyrightText": "© {year} Ingeniería Web Miranda. Todos los derechos reservados.",
     "privacyLink": {
       "label": "Privacy",
       "href": "/privacy"

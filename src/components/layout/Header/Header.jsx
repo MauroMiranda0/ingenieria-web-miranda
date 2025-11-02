@@ -1,11 +1,12 @@
 // src/components/layout/Header/Header.jsx
-'use client'; // Necesario para usar event handlers como onClick
+'use client';
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image'; // 1. Importar el componente Image
 import './Header.scss';
 
-const Header = ({ navLinks }) => {
+const Header = ({ navLinks, logoSrc }) => {
 
   const handleNavClick = (e, href) => {
     // Solo para enlaces internos (anclas)
@@ -31,7 +32,14 @@ const Header = ({ navLinks }) => {
     <header className="header">
       <div className="header__container">
         <Link href="/" className="header__logo" onClick={(e) => handleNavClick(e, '#')}>
-          Ingeniería Miranda
+          {logoSrc && (
+            <Image
+              src={logoSrc}
+              alt="Ingeniería Web Miranda Logo"
+              width={200} // Ancho intrínseco para el ratio
+              height={50}  // Alto intrínseco para el ratio
+            />
+          )}
         </Link>
         <nav className="header__nav" aria-label="Navegación principal">
           <ul className="header__nav-list">
