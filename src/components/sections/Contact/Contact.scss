@@ -1,0 +1,111 @@
+// src/components/sections/Contact/Contact.scss
+.contact {
+  padding: 5rem 2rem;
+  background-color: var(--color-gris-calido);
+
+  &__container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  // Estilos para el nuevo header
+  &__header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--color-azul-petroleo);
+  }
+
+  // Bloque de información
+  &__info-block {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 4rem;
+    gap: 2rem;
+  }
+
+  &__info-item {
+    flex: 1;
+  }
+
+  &__info-icon {
+    font-size: 2rem;
+    color: var(--color-azul-petroleo);
+    margin-bottom: 1rem;
+  }
+
+  &__info-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__info-details {
+    color: #64686d;
+    margin: 0;
+  }
+
+  // Formulario
+  &__form {
+    width: 100%;
+  }
+  
+  &__form-group {
+    margin-bottom: 1rem;
+  }
+
+  &__form-input,
+  &__form-textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0; // Bordes rectos
+    transition: border-color 0.3s ease;
+
+    &::placeholder {
+      color: #999;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: var(--color-azul-petroleo);
+    }
+  }
+
+  &__form-footer {
+    text-align: left; // Botón alineado a la izquierda
+    margin-top: 1rem;
+  }
+
+  &__form-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--color-azul-petroleo);
+    border: none;
+    border-radius: 0; // Botón recto
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-azul-cielo);
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__info-block {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

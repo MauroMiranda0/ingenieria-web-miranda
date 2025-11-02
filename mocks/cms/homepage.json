@@ -8,7 +8,11 @@
     { "label": "Inicio", "href": "#" },
     { "label": "Agencia", "href": "#about" },
     { "label": "Servicios", "href": "#services" },
-    { "label": "Portafolio", "href": "https://mauromiranda.online", "external": true },
+    {
+      "label": "Portafolio",
+      "href": "https://mauromiranda.online",
+      "external": true
+    },
     { "label": "Contacto", "href": "#contact" }
   ],
   "content": {
@@ -90,7 +94,7 @@
       }
     ],
     "portfolio": {
-      "title": "Our Works",
+      "title": "Proyectos",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam",
       "filters": [
         { "key": "*", "label": "All Works" },
@@ -170,6 +174,33 @@
           "fullImage": "/images/portfolio/full.png"
         }
       ]
+    },
+    "contact": {
+      "title": "Contáctanos",
+      "info": [
+        {
+          "icon": "map-marker",
+          "title": "Address",
+          "details": "123 Street, New York, USA"
+        },
+        {
+          "icon": "phone",
+          "title": "Phone",
+          "details": "+012 345 6789"
+        },
+        {
+          "icon": "envelope",
+          "title": "Email",
+          "details": "info@example.com"
+        }
+      ],
+      "formPlaceholders": {
+        "name": "Your Name",
+        "email": "Your Email",
+        "subject": "Subject",
+        "message": "Message"
+      },
+      "ctaText": "Send Message"
     }
   }
 }
