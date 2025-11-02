@@ -1,13 +1,11 @@
 // src/app/page.jsx
 
 import Hero from '@/components/sections/Hero/Hero';
-import Services from '@/components/sections/Services/Services'; // 1. Importar el nuevo componente
+import Services from '@/components/sections/Services/Services';
 import { getHomepageData } from '@/lib/cms';
 
 export default async function HomePage() {
   const homepageData = await getHomepageData();
-  
-  // 2. Extraer tanto 'hero' como 'services' de los datos
   const { hero, services } = homepageData.content;
 
   return (
@@ -19,8 +17,11 @@ export default async function HomePage() {
         ctaLink={hero.ctaLink}
         backgroundImage={hero.backgroundImage}
       />
-      {/* 3. Renderizar la nueva sección y pasarle los datos */}
-      <Services services={services} />
+      <Services 
+        title={services.title}
+        subtitle={services.subtitle}
+        items={services.items}
+      />
     </main>
   );
 }

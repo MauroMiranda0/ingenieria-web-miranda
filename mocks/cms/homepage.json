@@ -12,22 +12,51 @@
       "ctaLink": "/proyectos",
       "backgroundImage": "/images/hero-background.jpg"
     },
-    "services": [
-      {
-        "icon": "code-icon",
-        "title": "Desarrollo Next.js",
-        "description": "Aplicaciones web ultrarrápidas con Server-Side Rendering y Static Site Generation para un rendimiento y SEO superiores."
-      },
-      {
-        "icon": "design-icon",
-        "title": "UI/UX Sofisticado",
-        "description": "Diseñamos interfaces intuitivas y atractivas que mejoran la interacción del usuario y fortalecen la identidad de su marca."
-      },
-      {
-        "icon": "cms-icon",
-        "title": "Integración Headless CMS",
-        "description": "Gestión de contenido flexible y desacoplada para máxima escalabilidad y facilidad de actualización de su sitio web."
-      }
-    ]
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam",
+      "items": [
+        {
+          "icon": "bicycle",
+          "title": "Optimised for Speed",
+          "description": "Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors."
+        },
+        {
+          "icon": "cubes",
+          "title": "SEO Services",
+          "description": "Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors."
+        },
+        {
+          "icon": "connectdevelop",
+          "title": "Modern Frameworks",
+          "description": "Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors."
+        },
+        {
+          "icon": "gem",
+          "title": "Pixel Perfect Design",
+          "description": "Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors."
+        },
+        {
+          "icon": "usersecret",
+          "title": "User Security",
+          "description": "Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors."
+        },
+        {
+          "icon": "key",
+          "title": "Authentication",
+          "description": "Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors."
+        },
+        {
+          "icon": "laptop",
+          "title": "Responsive Design",
+          "description": "Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors."
+        },
+        {
+          "icon": "paw",
+          "title": "Friendly Support",
+          "description": "Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors."
+        }
+      ]
+    }
   }
 }

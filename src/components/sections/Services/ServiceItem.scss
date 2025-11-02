@@ -1,0 +1,36 @@
+// src/components/sections/Services/ServiceItem.scss
+.service-item {
+  text-align: center;
+  padding: 1rem;
+
+  &__icon {
+    font-size: 40px;
+    color: var(--color-negro-suave);
+    margin-bottom: 1.5rem;
+    transition: color 0.3s ease;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-negro-suave);
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+  }
+
+  &__description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #8d8d8d; // Un gris más suave para la descripción.
+  }
+
+  // Efecto al pasar el cursor sobre el item
+  &:hover {
+    .service-item__icon,
+    .service-item__title {
+      color: var(--color-verde-salvia);
+    }
+  }
+}

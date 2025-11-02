@@ -1,17 +1,19 @@
 // src/components/sections/Services/Services.jsx
-
 import React from 'react';
-import Card from '@/components/common/Card/Card';
+import ServiceItem from './ServiceItem'; // Importamos el nuevo componente
 import './Services.scss';
 
-const Services = ({ services }) => {
+const Services = ({ title, subtitle, items }) => {
   return (
     <section className="services" aria-labelledby="services-title">
       <div className="services__container">
-        <h2 id="services-title" className="services__title">Nuestros Servicios</h2>
+        <div className="services__header">
+          <h2 id="services-title" className="services__title">{title}</h2>
+          <p className="services__subtitle">{subtitle}</p>
+        </div>
         <div className="services__grid">
-          {services.map((service, index) => (
-            <Card
+          {items.map((service, index) => (
+            <ServiceItem
               key={index}
               icon={service.icon}
               title={service.title}
