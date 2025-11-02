@@ -1,0 +1,107 @@
+// src/components/sections/Portfolio/Portfolio.scss
+.portfolio {
+  padding: 5rem 2rem;
+  background-color: var(--color-gris-calido);
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+    color: #8d8d8d;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  &__filter {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 3rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  &__filter-btn {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #e5e5e5;
+    color: var(--color-negro-suave);
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &.active,
+    &:hover {
+      background: var(--color-mostaza);
+      color: #fff;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+
+  &__item-inner {
+    position: relative;
+    overflow: hidden;
+
+    .portfolio__item-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .portfolio__item-info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h3 {
+        color: #fff;
+        margin: 0 0 1rem 0;
+        transform: translateY(20px);
+        transition: transform 0.4s ease;
+      }
+
+      .preview {
+        transform: translateY(20px);
+        transition: transform 0.4s ease;
+      }
+    }
+
+    &:hover .portfolio__item-info {
+      opacity: 1;
+      h3, .preview {
+        transform: translateY(0);
+      }
+    }
+  }
+}

@@ -88,6 +88,88 @@
         "author": "Louise S. Morgan",
         "position": "Treatment, storage, and disposal (TSD) worker"
       }
-    ]
+    ],
+    "portfolio": {
+      "title": "Our Works",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam",
+      "filters": [
+        { "key": "*", "label": "All Works" },
+        { "key": "animation", "label": "Animation" },
+        { "key": "business", "label": "Business" },
+        { "key": "art", "label": "Art" }
+      ],
+      "items": [
+        {
+          "id": 1,
+          "title": "Portfolio Item 1",
+          "categories": ["animation"],
+          "thumbnail": "/images/portfolio/01.jpg",
+          "fullImage": "/images/portfolio/full.png"
+        },
+        {
+          "id": 2,
+          "title": "Portfolio Item 2",
+          "categories": ["business", "art"],
+          "thumbnail": "/images/portfolio/02.jpg",
+          "fullImage": "/images/portfolio/full.png"
+        },
+        {
+          "id": 3,
+          "title": "Portfolio Item 3",
+          "categories": ["animation"],
+          "thumbnail": "/images/portfolio/03.jpg",
+          "fullImage": "/images/portfolio/full.png"
+        },
+        {
+          "id": 4,
+          "title": "Portfolio Item 4",
+          "categories": ["business"],
+          "thumbnail": "/images/portfolio/04.jpg",
+          "fullImage": "/images/portfolio/full.png"
+        },
+        {
+          "id": 5,
+          "title": "Portfolio Item 5",
+          "categories": ["animation", "art"],
+          "thumbnail": "/images/portfolio/05.jpg",
+          "fullImage": "/images/portfolio/full.png"
+        },
+        {
+          "id": 6,
+          "title": "Portfolio Item 6",
+          "categories": ["business"],
+          "thumbnail": "/images/portfolio/06.jpg",
+          "fullImage": "/images/portfolio/full.png"
+        },
+        {
+          "id": 7,
+          "title": "Portfolio Item 7",
+          "categories": ["animation", "art"],
+          "thumbnail": "/images/portfolio/07.jpg",
+          "fullImage": "/images/portfolio/full.png"
+        },
+        {
+          "id": 8,
+          "title": "Portfolio Item 8",
+          "categories": ["business"],
+          "thumbnail": "/images/portfolio/08.jpg",
+          "fullImage": "/images/portfolio/full.png"
+        },
+        {
+          "id": 9,
+          "title": "Portfolio Item 9",
+          "categories": ["animation", "art"],
+          "thumbnail": "/images/portfolio/09.jpg",
+          "fullImage": "/images/portfolio/full.png"
+        },
+        {
+          "id": 10,
+          "title": "Portfolio Item 10",
+          "categories": ["business"],
+          "thumbnail": "/images/portfolio/10.jpg",
+          "fullImage": "/images/portfolio/full.png"
+        }
+      ]
+    }
   }
 }
