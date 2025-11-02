@@ -12,6 +12,16 @@
       "ctaLink": "/proyectos",
       "backgroundImage": "/images/hero-background.jpg"
     },
+    "about": {
+      "title": "Un Poco Más Sobre Nosotros",
+      "paragraphs": [
+        "Somos una agencia digital enfocada en la creación de soluciones web de alto impacto. Nuestra filosofía se basa en la atención meticulosa al detalle y en un código limpio y bien estructurado, garantizando una experiencia de usuario fluida para todos los visitantes.",
+        "Combinamos diseño sofisticado con las tecnologías más avanzadas para construir sitios web que no solo se ven increíbles, sino que también son ultrarrápidos, accesibles y optimizados para el crecimiento."
+      ],
+      "ctaText": "Descubre Quiénes Somos",
+      "ctaLink": "/sobre-nosotros",
+      "image": "/images/feature-2.png"
+    },
     "services": {
       "title": "Our Services",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam",

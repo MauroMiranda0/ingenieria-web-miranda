@@ -1,0 +1,77 @@
+// src/components/sections/About/About.scss
+.about {
+  padding: 5rem 2rem;
+  background-color: #ffffff;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  &__text-content {
+    flex: 1; // Ocupa la mitad del espacio disponible
+  }
+
+  &__image-content {
+    flex: 1;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    margin-top: 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1.5rem;
+    position: relative;
+
+    // Recreamos la línea verde de la plantilla
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 40%;
+      border-bottom: 2px solid var(--color-verde-salvia);
+    }
+  }
+  
+  &__paragraph {
+    color: #64686d;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  &__cta {
+    display: inline-block;
+    background-color: var(--color-verde-salvia);
+    color: #ffffff;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+    &:hover, &:focus {
+      background-color: var(--color-azul-petroleo);
+    }
+  }
+  
+  &__image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 992px) {
+    &__container {
+      flex-direction: column-reverse; // El texto pasa abajo, imagen arriba
+      gap: 3rem;
+    }
+    &__text-content, &__image-content {
+      width: 100%;
+    }
+  }
+}
