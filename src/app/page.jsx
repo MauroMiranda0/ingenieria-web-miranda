@@ -1,5 +1,6 @@
 // src/app/page.jsx
 
+import AnimateOnScroll from '@/components/common/AnimateOnScroll/AnimateOnScroll'; // 1. Importar
 import Hero from '@/components/sections/Hero/Hero';
 import About from '@/components/sections/About/About';
 import Services from '@/components/sections/Services/Services';
@@ -13,17 +14,29 @@ export default async function HomePage() {
 
   return (
     <main>
+      {/* La sección Hero no necesita animación de scroll */}
       <Hero {...hero} />
-      <About {...about} />
-      <Services title={services.title} subtitle={services.subtitle} items={services.items} />
-      <Portfolio {...portfolio} />
-      <Testimonials testimonials={testimonials} />
-      {/* 
-        ¡ESTA ES LA LÍNEA CORREGIDA!
-        El operador "spread" (...) pasa todas las propiedades del objeto 'contact' 
-        (info, formPlaceholders, ctaText) como props individuales al componente.
-      */}
-      <Contact {...contact} />
+
+      {/* 2. Envolver cada sección con AnimateOnScroll */}
+      <AnimateOnScroll>
+        <About {...about} />
+      </AnimateOnScroll>
+
+      <AnimateOnScroll>
+        <Services title={services.title} subtitle={services.subtitle} items={services.items} />
+      </AnimateOnScroll>
+
+      <AnimateOnScroll>
+        <Portfolio {...portfolio} />
+      </AnimateOnScroll>
+
+      <AnimateOnScroll>
+        <Testimonials testimonials={testimonials} />
+      </AnimateOnScroll>
+      
+      <AnimateOnScroll>
+        <Contact {...contact} />
+      </AnimateOnScroll>
     </main>
   );
 }

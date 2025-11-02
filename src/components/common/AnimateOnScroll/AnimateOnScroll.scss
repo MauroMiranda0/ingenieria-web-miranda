@@ -1,0 +1,27 @@
+// src/components/common/AnimateOnScroll/AnimateOnScroll.scss
+
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity var(--animation-duration) ease-out, transform var(--animation-duration) ease-out;
+  transition-delay: var(--animation-delay);
+}
+
+// Animación: Fade In Up
+.fadeInUp {
+  transform: translateY(40px);
+}
+
+.fadeInUp.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+// Animación: Fade In
+.fadeIn {
+  transform: scale(0.95);
+}
+
+.fadeIn.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
