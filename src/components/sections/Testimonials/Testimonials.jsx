@@ -1,14 +1,16 @@
 // src/components/sections/Testimonials/Testimonials.jsx
-'use client'; // Directiva necesaria para componentes con interactividad en el App Router
+'use client';
 
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+// 1. Importar el módulo Autoplay
+import { Navigation, Autoplay } from 'swiper/modules';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 
 // Importar estilos de Swiper
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/autoplay'; // Es buena práctica importar los estilos del módulo que usas
 
 import './Testimonials.scss';
 
@@ -16,16 +18,21 @@ const Testimonials = ({ testimonials }) => {
   return (
     <section className="testimonials" aria-labelledby="testimonials-title">
       <div className="testimonials__container">
-        {/* El ID del título no es necesario aquí ya que no hay un título visible */}
         <div className="testimonials__slider-wrapper">
           <Swiper
-            modules={[Navigation]}
+            // 2. Añadir Autoplay a la lista de módulos
+            modules={[Navigation, Autoplay]}
             spaceBetween={30}
             slidesPerView={1}
             loop={true}
             navigation={{
               nextEl: '.swiper-button-next-custom',
               prevEl: '.swiper-button-prev-custom',
+            }}
+            // 3. Añadir la configuración del autoplay
+            autoplay={{
+              delay: 8000, // 8 segundos
+              disableOnInteraction: false, // El autoplay no se detiene si el usuario interactúa
             }}
           >
             {testimonials.map((testimonial, index) => (
@@ -38,7 +45,6 @@ const Testimonials = ({ testimonials }) => {
             ))}
           </Swiper>
           
-          {/* Botones de navegación personalizados */}
           <div className="swiper-navigation">
             <button className="swiper-button-prev-custom" aria-label="Testimonio anterior">
               <FaAngleLeft />
