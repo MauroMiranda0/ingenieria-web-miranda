@@ -4,6 +4,13 @@
     "description": "Desarrollamos soluciones web de alto rendimiento enfocadas en la experiencia de usuario y el crecimiento de su negocio.",
     "ogImage": "/images/og-image-homepage.jpg"
   },
+  "navigation": [
+    { "label": "Inicio", "href": "#" },
+    { "label": "Agencia", "href": "#about" },
+    { "label": "Servicios", "href": "#services" },
+    { "label": "Portafolio", "href": "https://mauromiranda.online", "external": true },
+    { "label": "Contacto", "href": "#contact" }
+  ],
   "content": {
     "hero": {
       "title": "Ingeniería y Diseño Para un Futuro Digital",
@@ -20,10 +27,10 @@
       ],
       "ctaText": "Descubre Quiénes Somos",
       "ctaLink": "/sobre-nosotros",
-      "image": "/images/feature-2.png"
+      "image": "/images/feature-1.png"
     },
     "services": {
-      "title": "Our Services",
+      "title": "Servicios",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam",
       "items": [
         {

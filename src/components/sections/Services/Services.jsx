@@ -5,7 +5,7 @@ import './Services.scss';
 
 const Services = ({ title, subtitle, items }) => {
   return (
-    <section className="services" aria-labelledby="services-title">
+    <section className="services" id="services" aria-labelledby="services-title">
       <div className="services__container">
         <div className="services__header">
           <h2 id="services-title" className="services__title">{title}</h2>

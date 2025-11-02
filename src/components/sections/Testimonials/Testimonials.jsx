@@ -16,7 +16,7 @@ import './Testimonials.scss';
 
 const Testimonials = ({ testimonials }) => {
   return (
-    <section className="testimonials" aria-labelledby="testimonials-title">
+    <section className="testimonials" id="testimonials" aria-labelledby="testimonials-title">
       <div className="testimonials__container">
         <div className="testimonials__slider-wrapper">
           <Swiper
