@@ -10,10 +10,10 @@
   "navigation": [
     { "label": "Inicio", "href": "#" },
     { "label": "Agencia", "href": "#about" },
-    { "label": "Servicios", "href": "#services" },
+    { "label": "Servicios", "href": "/services" },
     {
       "label": "Portafolio",
-      "href": "https://mauromiranda.online",
+      "href": "https://hoja-de-vida-mauro.vercel.app/",
       "external": true
     },
     { "label": "Contacto", "href": "#contact" }
@@ -71,48 +71,38 @@
       "image": "/images/feature-1.png"
     },
     "services": {
-      "title": "Servicios",
-      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam",
+      "title": "Nuestros Servicios",
+      "subtitle": "Transformamos ideas en soluciones digitales robustas y eficientes. Descubre cómo podemos ayudarte a alcanzar tus objetivos.",
       "items": [
         {
-          "icon": "bicycle",
-          "title": "Optimised for Speed",
-          "description": "Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors."
+          "icon": "laptop",
+          "title": "Desarrollo Web",
+          "description": "Creación de sitios y aplicaciones web a medida, utilizando tecnologías modernas para garantizar escalabilidad y rendimiento."
         },
         {
           "icon": "cubes",
-          "title": "SEO Services",
-          "description": "Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors."
+          "title": "Automatización de Procesos",
+          "description": "Optimizamos tus flujos de trabajo mediante la automatización de tareas repetitivas, ahorrando tiempo y reduciendo errores."
         },
         {
           "icon": "connectdevelop",
-          "title": "Modern Frameworks",
-          "description": "Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors."
+          "title": "Integración de APIs",
+          "description": "Conectamos tus sistemas y plataformas con servicios de terceros para centralizar tu operación y ampliar funcionalidades."
         },
         {
           "icon": "gem",
-          "title": "Pixel Perfect Design",
-          "description": "Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors."
+          "title": "Diseño UX/UI",
+          "description": "Diseñamos interfaces intuitivas y atractivas centradas en el usuario para ofrecer experiencias digitales memorables."
         },
         {
           "icon": "usersecret",
-          "title": "User Security",
-          "description": "Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors."
+          "title": "Consultoría Digital",
+          "description": "Te asesoramos en la estrategia tecnológica y de producto para asegurar que tus decisiones de hoy impulsen el crecimiento de mañana."
         },
         {
-          "icon": "key",
-          "title": "Authentication",
-          "description": "Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors."
-        },
-        {
-          "icon": "laptop",
-          "title": "Responsive Design",
-          "description": "Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors."
-        },
-        {
-          "icon": "paw",
-          "title": "Friendly Support",
-          "description": "Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors."
+          "icon": "bicycle",
+          "title": "Optimización de Rendimiento",
+          "description": "Analizamos y mejoramos la velocidad de carga y la eficiencia de tu sitio web para mejorar el SEO y la retención de usuarios."
         }
       ]
     },
