@@ -1,0 +1,46 @@
+// src/app/(pages)/services/page.scss
+
+.services-page {
+  
+  &__header {
+    background-color: var(--color-azul-petroleo);
+    color: var(--color-gris-calido);
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+
+  &__header-container {
+    max-width: 800px;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 3rem;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: rgba(245, 245, 245, 0.9);
+      line-height: 1.7;
+    }
+  }
+  
+  // Ajustamos el componente Services cuando está en esta página
+  .services {
+    // En lugar de blanco, usamos el gris cálido para que se integre
+    background-color: var(--color-gris-calido); 
+  }
+
+  @media (max-width: 768px) {
+    &__header {
+      padding: 4rem 1rem;
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
