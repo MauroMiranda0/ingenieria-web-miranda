@@ -2,13 +2,14 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image'; // Importar Image
-import { FaLinkedin, FaGithub, FaXTwitter } from 'react-icons/fa6';
+import { FaLinkedin, FaGithub, FaXTwitter, FaFacebookF } from 'react-icons/fa6';
 import './Footer.scss';
 
 const iconMap = {
   linkedin: FaLinkedin,
   github: FaGithub,
   xtwitter: FaXTwitter,
+  facebook: FaFacebookF,
 };
 
 const Footer = ({ footerData }) => {
@@ -65,6 +66,7 @@ const Footer = ({ footerData }) => {
           <div className="footer__socials">
             {contactInfo.socials.map((social) => {
               const Icon = iconMap[social.icon];
+              if (!Icon) return null;
               return (
                 <a key={social.icon} href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.label}>
                   <Icon />
