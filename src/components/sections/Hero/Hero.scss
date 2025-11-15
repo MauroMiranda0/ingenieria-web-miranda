@@ -1,3 +1,4 @@
+// src/components/sections/Hero/Hero.scss
 .hero {
   position: relative;
   display: flex;
@@ -26,7 +27,21 @@
     position: relative;
     z-index: 2;
     max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  // --- NUEVOS ESTILOS PARA EL LOGO ---
+  &__logo-container {
+    margin-bottom: 2rem;
+  }
+
+  &__logo {
+    max-width: 100px; // Tamaño máximo del logo
+    height: auto;
+  }
+  // --- FIN DE NUEVOS ESTILOS ---
 
   &__title {
     font-size: 3.5rem;
@@ -60,7 +75,7 @@
 
     &:hover,
     &:focus {
-      background-color: var(--color-mostaza);
+      background-color: var(--color-mostaza); // Usando tu nuevo color
       transform: translateY(-3px);
       outline: 2px solid transparent;
       outline-offset: 2px;
@@ -78,5 +93,7 @@
     padding: 2rem 1rem;
     &__title { font-size: 2.2rem; }
     &__subtitle { font-size: 1rem; }
+    &__logo-container { margin-bottom: 1.5rem; }
+    &__logo { max-width: 80px; }
   }
 }

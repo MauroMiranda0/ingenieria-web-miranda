@@ -1,3 +1,4 @@
+
 {
   "meta": {
     "title": "Ingeniería Web Miranda | Soluciones Innovadoras",
@@ -5,22 +6,18 @@
     "ogImage": "/images/og-image-homepage.jpg"
   },
   "siteIdentity": {
-    "logoPrincipal": "/images/logos/logo-principal.png"
+    "logoPrincipal": "/images/logos/logo-grande.png"
   },
   "navigation": [
-    { "label": "Inicio", "href": "#" },
-    { "label": "Agencia", "href": "#about" },
-    { "label": "Servicios", "href": "/services" },
-    {
-      "label": "Portafolio",
-      "href": "https://hoja-de-vida-mauro.vercel.app/",
-      "external": true
-    },
-    { "label": "Contacto", "href": "#contact" }
+    { "label": "Home", "href": "#" },
+    { "label": "About", "href": "#about" },
+    { "label": "Services", "href": "#services" },
+    { "label": "Portfolio", "href": "https://mauromiranda.online", "external": true },
+    { "label": "Contact", "href": "#contact" }
   ],
   "footer": {
     "logoBlanco": "/images/logos/logo-blanco.png",
-    "slogan": "Ingeniería web que  convierte ideas en realidades digitales.",
+    "slogan": "Digital solutions with precision",
     "linkColumns": [
       {
         "title": "Services",
@@ -46,7 +43,7 @@
         { "icon": "github", "url": "https://github.com/", "label": "GitHub" }
       ]
     },
-    "copyrightText": "© {year} Ingeniería Web Miranda. Todos los derechos reservados.",
+    "copyrightText": "© {year} Ingeniería Web Miranda. All rights reserved.",
     "privacyLink": {
       "label": "Privacy",
       "href": "/privacy"
@@ -54,6 +51,7 @@
   },
   "content": {
     "hero": {
+      "logoSrc": "/images/logos/logo-blanco.png",
       "title": "Ingeniería y Diseño Para un Futuro Digital",
       "subtitle": "Creamos experiencias web memorables que combinan estética sofisticada y rendimiento excepcional.",
       "ctaText": "Descubre Nuestros Proyectos",
@@ -68,60 +66,22 @@
       ],
       "ctaText": "Descubre Quiénes Somos",
       "ctaLink": "/sobre-nosotros",
-      "image": "/images/feature-1.png"
+      "image": "/images/feature-2.png"
     },
     "services": {
       "title": "Nuestros Servicios",
       "subtitle": "Transformamos ideas en soluciones digitales robustas y eficientes. Descubre cómo podemos ayudarte a alcanzar tus objetivos.",
       "items": [
-        {
-          "icon": "laptop",
-          "title": "Desarrollo Web",
-          "description": "Creación de sitios y aplicaciones web a medida, utilizando tecnologías modernas para garantizar escalabilidad y rendimiento."
-        },
-        {
-          "icon": "cubes",
-          "title": "Automatización de Procesos",
-          "description": "Optimizamos tus flujos de trabajo mediante la automatización de tareas repetitivas, ahorrando tiempo y reduciendo errores."
-        },
-        {
-          "icon": "connectdevelop",
-          "title": "Integración de APIs",
-          "description": "Conectamos tus sistemas y plataformas con servicios de terceros para centralizar tu operación y ampliar funcionalidades."
-        },
-        {
-          "icon": "gem",
-          "title": "Diseño UX/UI",
-          "description": "Diseñamos interfaces intuitivas y atractivas centradas en el usuario para ofrecer experiencias digitales memorables."
-        },
-        {
-          "icon": "usersecret",
-          "title": "Consultoría Digital",
-          "description": "Te asesoramos en la estrategia tecnológica y de producto para asegurar que tus decisiones de hoy impulsen el crecimiento de mañana."
-        },
-        {
-          "icon": "bicycle",
-          "title": "Optimización de Rendimiento",
-          "description": "Analizamos y mejoramos la velocidad de carga y la eficiencia de tu sitio web para mejorar el SEO y la retención de usuarios."
-        }
+        { "icon": "laptop", "title": "Desarrollo Web", "description": "Creación de sitios y aplicaciones web a medida, utilizando tecnologías modernas para garantizar escalabilidad y rendimiento." },
+        { "icon": "cubes", "title": "Automatización de Procesos", "description": "Optimizamos tus flujos de trabajo mediante la automatización de tareas repetitivas, ahorrando tiempo y reduciendo errores." },
+        { "icon": "connectdevelop", "title": "Integración de APIs", "description": "Conectamos tus sistemas y plataformas con servicios de terceros para centralizar tu operación y ampliar funcionalidades." },
+        { "icon": "diamond", "title": "Diseño UX/UI", "description": "Diseñamos interfaces intuitivas y atractivas centradas en el usuario para ofrecer experiencias digitales memorables." },
+        { "icon": "usersecret", "title": "Consultoría Digital", "description": "Te asesoramos en la estrategia tecnológica y de producto para asegurar que tus decisiones de hoy impulsen el crecimiento de mañana." },
+        { "icon": "bicycle", "title": "Optimización de Rendimiento", "description": "Analizamos y mejoramos la velocidad de carga y la eficiencia de tu sitio web para mejorar el SEO y la retención de usuarios." }
       ]
     },
-    "testimonials": [
-      {
-        "image": "/images/testimonial/01.jpg",
-        "quote": "Su dedicación al detalle y al rendimiento es simplemente excepcional. Transformaron completamente nuestra perspectiva digital.",
-        "author": "Juan Pérez",
-        "position": "Director de Innovación, FuturaCorp"
-      },
-      {
-        "image": "/images/testimonial/02.jpg",
-        "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam",
-        "author": "Louise S. Morgan",
-        "position": "Treatment, storage, and disposal (TSD) worker"
-      }
-    ],
     "portfolio": {
-      "title": "Proyectos",
+      "title": "Our Works",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam",
       "filters": [
         { "key": "*", "label": "All Works" },
@@ -130,103 +90,28 @@
         { "key": "art", "label": "Art" }
       ],
       "items": [
-        {
-          "id": 1,
-          "title": "Portfolio Item 1",
-          "categories": ["animation"],
-          "thumbnail": "/images/portfolio/01.jpg",
-          "fullImage": "/images/portfolio/full.png"
-        },
-        {
-          "id": 2,
-          "title": "Portfolio Item 2",
-          "categories": ["business", "art"],
-          "thumbnail": "/images/portfolio/02.jpg",
-          "fullImage": "/images/portfolio/full.png"
-        },
-        {
-          "id": 3,
-          "title": "Portfolio Item 3",
-          "categories": ["animation"],
-          "thumbnail": "/images/portfolio/03.jpg",
-          "fullImage": "/images/portfolio/full.png"
-        },
-        {
-          "id": 4,
-          "title": "Portfolio Item 4",
-          "categories": ["business"],
-          "thumbnail": "/images/portfolio/04.jpg",
-          "fullImage": "/images/portfolio/full.png"
-        },
-        {
-          "id": 5,
-          "title": "Portfolio Item 5",
-          "categories": ["animation", "art"],
-          "thumbnail": "/images/portfolio/05.jpg",
-          "fullImage": "/images/portfolio/full.png"
-        },
-        {
-          "id": 6,
-          "title": "Portfolio Item 6",
-          "categories": ["business"],
-          "thumbnail": "/images/portfolio/06.jpg",
-          "fullImage": "/images/portfolio/full.png"
-        },
-        {
-          "id": 7,
-          "title": "Portfolio Item 7",
-          "categories": ["animation", "art"],
-          "thumbnail": "/images/portfolio/07.jpg",
-          "fullImage": "/images/portfolio/full.png"
-        },
-        {
-          "id": 8,
-          "title": "Portfolio Item 8",
-          "categories": ["business"],
-          "thumbnail": "/images/portfolio/08.jpg",
-          "fullImage": "/images/portfolio/full.png"
-        },
-        {
-          "id": 9,
-          "title": "Portfolio Item 9",
-          "categories": ["animation", "art"],
-          "thumbnail": "/images/portfolio/09.jpg",
-          "fullImage": "/images/portfolio/full.png"
-        },
-        {
-          "id": 10,
-          "title": "Portfolio Item 10",
-          "categories": ["business"],
-          "thumbnail": "/images/portfolio/10.jpg",
-          "fullImage": "/images/portfolio/full.png"
-        }
+        { "id": 1, "title": "Portfolio Item 1", "categories": ["animation"], "thumbnail": "/images/portfolio/01.jpg", "fullImage": "/images/portfolio/full.jpg" },
+        { "id": 2, "title": "Portfolio Item 2", "categories": ["business", "art"], "thumbnail": "/images/portfolio/02.jpg", "fullImage": "/images/portfolio/full.jpg" },
+        { "id": 3, "title": "Portfolio Item 3", "categories": ["animation"], "thumbnail": "/images/portfolio/03.jpg", "fullImage": "/images/portfolio/full.jpg" },
+        { "id": 4, "title": "Portfolio Item 4", "categories": ["business"], "thumbnail": "/images/portfolio/04.jpg", "fullImage": "/images/portfolio/full.jpg" },
+        { "id": 5, "title": "Portfolio Item 5", "categories": ["animation", "art"], "thumbnail": "/images/portfolio/05.jpg", "fullImage": "/images/portfolio/full.jpg" },
+        { "id": 6, "title": "Portfolio Item 6", "categories": ["business"], "thumbnail": "/images/portfolio/06.jpg", "fullImage": "/images/portfolio/full.jpg" },
+        { "id": 7, "title": "Portfolio Item 7", "categories": ["animation", "art"], "thumbnail": "/images/portfolio/07.jpg", "fullImage": "/images/portfolio/full.jpg" },
+        { "id": 8, "title": "Portfolio Item 8", "categories": ["business"], "thumbnail": "/images/portfolio/08.jpg", "fullImage": "/images/portfolio/full.jpg" }
       ]
     },
+    "testimonials": [
+      { "image": "/images/testimonial/01.jpg", "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam", "author": "Louise S. Morgan", "position": "Treatment, storage, and disposal (TSD) worker" },
+      { "image": "/images/testimonial/02.jpg", "quote": "Su dedicación al detalle y al rendimiento es simplemente excepcional. Transformaron completamente nuestra perspectiva digital.", "author": "Juan Pérez", "position": "Director de Innovación, FuturaCorp" }
+    ],
     "contact": {
       "title": "Contáctanos",
       "info": [
-        {
-          "icon": "map-marker",
-          "title": "Address",
-          "details": "123 Street, New York, USA"
-        },
-        {
-          "icon": "phone",
-          "title": "Phone",
-          "details": "+012 345 6789"
-        },
-        {
-          "icon": "envelope",
-          "title": "Email",
-          "details": "info@example.com"
-        }
+        { "icon": "map-marker", "title": "Address", "details": "123 Street, New York, USA" },
+        { "icon": "phone", "title": "Phone", "details": "+012 345 6789" },
+        { "icon": "envelope", "title": "Email", "details": "info@example.com" }
       ],
-      "formPlaceholders": {
-        "name": "Your Name",
-        "email": "Your Email",
-        "subject": "Subject",
-        "message": "Message"
-      },
+      "formPlaceholders": { "name": "Your Name", "email": "Your Email", "subject": "Subject", "message": "Message" },
       "ctaText": "Send Message"
     }
   }

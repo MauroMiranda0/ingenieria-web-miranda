@@ -1,10 +1,12 @@
+// src/components/sections/Hero/Hero.jsx
+
 import React from 'react';
 import Link from 'next/link';
-import './Hero.scss'; // Importamos el SCSS aquí
+import Image from 'next/image'; // Importamos el componente Image
+import './Hero.scss';
 
-const Hero = ({ title, subtitle, ctaText, ctaLink, backgroundImage }) => {
+const Hero = ({ title, subtitle, ctaText, ctaLink, backgroundImage, logoSrc }) => {
   const heroStyle = {
-    // Asumimos que la imagen estará en /public/images/
     backgroundImage: `url(${backgroundImage})`,
   };
 
@@ -12,6 +14,18 @@ const Hero = ({ title, subtitle, ctaText, ctaLink, backgroundImage }) => {
     <section className="hero" style={heroStyle} role="banner" aria-labelledby="hero-title">
       <div className="hero__overlay"></div>
       <div className="hero__content">
+        {/* Renderizamos el logo si la prop 'logoSrc' existe */}
+        {logoSrc && (
+          <div className="hero__logo-container">
+            <Image 
+              src={logoSrc}
+              alt="Logo de Ingeniería Web Miranda"
+              width={100} // Ancho de la imagen
+              height={100} // Alto de la imagen
+              className="hero__logo"
+            />
+          </div>
+        )}
         <h1 id="hero-title" className="hero__title">{title}</h1>
         <p className="hero__subtitle">{subtitle}</p>
         {ctaText && ctaLink && (
