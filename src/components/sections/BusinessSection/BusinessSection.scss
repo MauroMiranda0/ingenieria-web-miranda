@@ -1,0 +1,121 @@
+// src/components/sections/BusinessSection/BusinessSection.scss
+
+.business.sections {
+  background-image: url('/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  width: 100%;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+.business__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.business__head {
+  margin-bottom: 40px;
+
+  h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: var(--color-gris-calido);
+    letter-spacing: 0.5px;
+  }
+
+  p {
+    color: rgba(245, 245, 245, 0.9);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.business__row {
+  display: flex;
+  justify-content: center;
+}
+
+.business__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.business__col {
+  flex: 1 1 220px;
+  max-width: 260px;
+}
+
+.business__card {
+  background: #fff;
+  padding: 40px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.25s ease-in-out;
+
+  &:hover {
+    background: var(--color-azul-petroleo);
+    color: #fff;
+    transform: translateY(-6px);
+  }
+
+  &:hover i,
+  &:hover h4,
+  &:hover p {
+    color: #fff;
+  }
+
+  i {
+    font-size: 60px;
+    color: var(--color-azul-cielo);
+    margin-bottom: 20px;
+  }
+
+  h4 {
+    font-size: 17px;
+    color: var(--color-negro-suave);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 13px;
+    color: rgba(28, 28, 28, 0.72);
+    line-height: 1.6;
+  }
+}
+
+.business__separator {
+  width: 40px;
+  height: 2px;
+  margin: 0 auto 10px;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+  .business__col {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .business.sections {
+    padding: 60px 0;
+  }
+
+  .business__head h1 {
+    font-size: 28px;
+  }
+}

@@ -2,14 +2,15 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image'; // Importar Image
-import { FaLinkedin, FaGithub, FaXTwitter, FaFacebookF } from 'react-icons/fa6';
+import { FaLinkedin, FaGithub, FaXTwitter, FaFacebook } from 'react-icons/fa6';
+
 import './Footer.scss';
 
 const iconMap = {
   linkedin: FaLinkedin,
   github: FaGithub,
   xtwitter: FaXTwitter,
-  facebook: FaFacebookF,
+  facebook: FaFacebook,
 };
 
 const Footer = ({ footerData }) => {

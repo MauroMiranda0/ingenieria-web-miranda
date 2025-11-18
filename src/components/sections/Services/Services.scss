@@ -1,54 +1,47 @@
 // src/components/sections/Services/Services.scss
 .services {
-  padding: 5rem 2rem;
-  background-color: #FFFFFF; // Fondo blanco como en la plantilla
+  padding: 80px 0;
+  background-color: var(--color-gris-calido);
 
   &__container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
   }
 
   &__header {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 40px;
   }
 
   &__title {
-    font-size: 2.5rem;
+    font-size: 34px;
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+    color: var(--color-negro-suave);
   }
 
   &__subtitle {
     font-size: 1rem;
-    color: #8d8d8d;
-    max-width: 650px;
+    color: #555;
+    max-width: 700px;
     margin: 0 auto;
-    line-height: 1.7;
+    line-height: 1.6;
   }
 
   &__grid {
     display: grid;
-    // Creamos una cuadrícula de 4 columnas en desktop
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    align-items: stretch;
   }
 
-  // Responsive: 2 columnas en tablets
-  @media (max-width: 992px) {
-    &__grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
+  @media (max-width: 768px) {
+    padding: 60px 0;
 
-  // Responsive: 1 columna en móviles
-  @media (max-width: 576px) {
-    padding: 3rem 1rem;
-    &__grid {
-      grid-template-columns: 1fr;
-    }
     &__title {
-      font-size: 2rem;
+      font-size: 28px;
     }
   }
 }

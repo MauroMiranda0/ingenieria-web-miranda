@@ -41,7 +41,7 @@
         { "icon": "linkedin", "url": "https://www.linkedin.com/", "label": "LinkedIn" },
         { "icon": "xtwitter", "url": "https://twitter.com/", "label": "X (Twitter)" },
         { "icon": "github", "url": "https://github.com/", "label": "GitHub" },
-        { "icon": "facebook", "url": "https://facebook.com/", "label": "Facebook" }
+        { "icon": "facebook", "url": "https://facebook.com/", "label": "Facebook"}
       ]
     },
     "copyrightText": "© {year} Ingeniería Web Miranda. All rights reserved.",
@@ -55,9 +55,9 @@
       "logoSrc": "/images/logos/logo-blanco.png",
       "title": "Ingeniería y Diseño Para un Futuro Digital",
       "subtitle": "Creamos experiencias web memorables que combinan estética sofisticada y rendimiento excepcional.",
-      "ctaText": "Descubre Nuestros Proyectos",
+      "ctaText": "Nuestros Proyectos",
       "ctaLink": "/proyectos",
-      "backgroundImage": "/images/hero-background.jpg"
+      "backgroundImage": "/images/hero-background-2.png"
     },
     "about": {
       "title": "Un Poco Más Sobre Nosotros",
@@ -67,7 +67,7 @@
       ],
       "ctaText": "Descubre Quiénes Somos",
       "ctaLink": "/sobre-nosotros",
-      "image": "/images/feature-2.png"
+      "image": "/images/feature-1.png"
     },
     "services": {
       "title": "Nuestros Servicios",

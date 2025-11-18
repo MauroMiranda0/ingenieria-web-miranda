@@ -1,18 +1,68 @@
 // src/components/layout/Header/Header.jsx
 'use client';
 
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image'; // 1. Importar el componente Image
+import React, { useState } from 'react';
+import {
+  FiHome,
+  FiInfo,
+  FiBriefcase,
+  FiBarChart2,
+  FiMail,
+  FiShield,
+  FiCreditCard,
+  FiMenu,
+  FiX,
+} from 'react-icons/fi';
+import { FaLinkedin, FaGithub, FaXTwitter, FaFacebook, FaGlobe } from 'react-icons/fa6';
 import './Header.scss';
 
-const Header = ({ navLinks, logoSrc }) => {
+const iconLibrary = {
+  home: FiHome,
+  about: FiInfo,
+  services: FiBarChart2,
+  portfolio: FiBriefcase,
+  contact: FiMail,
+  stats: FiBarChart2,
+  shield: FiShield,
+  wallet: FiCreditCard,
+};
+
+const socialIconLibrary = {
+  linkedin: FaLinkedin,
+  github: FaGithub,
+  xtwitter: FaXTwitter,
+  twitter: FaXTwitter,
+  facebook: FaFacebook,
+};
+
+const normalizeKey = (value = '') => value.toLowerCase().replace(/\s+/g, '');
+
+const getIconComponent = (link) => {
+  const iconKey = normalizeKey(link.icon || '');
+  if (iconLibrary[iconKey]) return iconLibrary[iconKey];
+
+  const labelKey = normalizeKey(link.label || '');
+  return iconLibrary[labelKey] || FiHome;
+};
+
+const getSocialIcon = (item) => {
+  if (React.isValidElement(item.icon)) {
+    return item.icon;
+  }
+
+  const iconKey = normalizeKey(item.icon || item.label || '');
+  const Icon = socialIconLibrary[iconKey] || FaGlobe;
+  return <Icon />;
+};
+
+const Header = ({ navLinks, socialLinks }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleNavClick = (e, href) => {
     // Solo para enlaces internos (anclas)
     if (href.startsWith('#')) {
       e.preventDefault();
-      
+
       // Si es solo '#', ir al inicio de la página
       if (href === '#') {
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -26,38 +76,61 @@ const Header = ({ navLinks, logoSrc }) => {
         targetElement.scrollIntoView({ behavior: 'smooth' });
       }
     }
+
+    setIsMenuOpen(false);
   };
 
   return (
     <header className="header">
       <div className="header__container">
-        <Link href="/" className="header__logo" onClick={(e) => handleNavClick(e, '#')}>
-          {logoSrc && (
-            <Image
-              src={logoSrc}
-              alt="Ingeniería Web Miranda Logo"
-              width={200} // Ancho intrínseco para el ratio
-              height={50}  // Alto intrínseco para el ratio
-            />
-          )}
-        </Link>
-        <nav className="header__nav" aria-label="Navegación principal">
+        <button
+          type="button"
+          className="header__menu-toggle"
+          aria-expanded={isMenuOpen}
+          aria-label="Abrir o cerrar menú de navegación"
+          onClick={() => setIsMenuOpen((prev) => !prev)}
+        >
+          {isMenuOpen ? <FiX /> : <FiMenu />}
+        </button>
+        <nav className={`header__nav ${isMenuOpen ? 'header__nav--open' : ''}`} aria-label="Navegación principal">
           <ul className="header__nav-list">
-            {(navLinks || []).map((link) => (
-              <li key={link.href} className="header__nav-item">
-                <a 
-                  href={link.href}
-                  className="header__nav-link"
-                  // Si es externo, abrir en nueva pestaña
-                  target={link.external ? '_blank' : '_self'}
-                  rel={link.external ? 'noopener noreferrer' : ''}
-                  onClick={(e) => handleNavClick(e, link.href)}
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
+            {(navLinks || []).map((link) => {
+              const Icon = getIconComponent(link);
+
+              return (
+                <li key={link.href} className="header__nav-item">
+                  <a
+                    href={link.href}
+                    className="header__nav-link"
+                    target={link.external ? '_blank' : '_self'}
+                    rel={link.external ? 'noopener noreferrer' : ''}
+                    onClick={(e) => handleNavClick(e, link.href)}
+                  >
+                    <span className="header__icon" aria-hidden="true">
+                      <Icon />
+                    </span>
+                    <span className="header__nav-label">{link.label}</span>
+                  </a>
+                </li>
+              );
+            })}
           </ul>
+          {Boolean(socialLinks?.length) && (
+            <div className="header__social" aria-label="Redes sociales">
+              {socialLinks.map((item) => (
+                <a
+                  key={item.url}
+                  href={item.url}
+                  className="header__social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={item.label || item.icon}
+                >
+                  {getSocialIcon(item)}
+                </a>
+              ))}
+            </div>
+          )}
         </nav>
       </div>
     </header>
