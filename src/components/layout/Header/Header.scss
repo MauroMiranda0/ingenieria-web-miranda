@@ -5,58 +5,79 @@
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.85); // Fondo semitransparente
-  backdrop-filter: blur(10px); // Efecto "glassmorphism"
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  padding: 1rem 2rem;
+  background: transparent;
+  backdrop-filter: none;
+  border-bottom: none;
+  padding: 0.75rem 1.5rem;
 
   &__container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-  }
-
-  &__logo {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-
-    img {
-      height: 80px; // Altura deseada del logo en el header
-      width: auto; // El ancho se ajustará automáticamente
-    }
   }
 
   &__nav-list {
     display: flex;
-    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0.25rem 0; // pequeño respiro para el hover
+  }
+
+  &__nav-item {
+    display: flex;
   }
 
   &__nav-link {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: var(--color-negro-suave);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #8f96a3;
     text-decoration: none;
-    transition: color 0.3s ease;
+    background: transparent;
+    padding: 0.35rem 0.5rem;
+    border-radius: 14px;
+    transition: color 0.25s ease, transform 0.25s ease;
+
+    &.is-active {
+      color: var(--color-azul-cielo);
+    }
 
     &:hover,
-    &:focus {
+    &:focus-visible {
       color: var(--color-azul-cielo);
+      transform: translateY(-2px);
     }
   }
 
-  // En móvil, ocultaríamos la navegación y mostraríamos un ícono de hamburguesa.
-  // Por ahora, solo ajustamos el espaciado.
-  @media (max-width: 768px) {
-    padding: 1rem;
+  &__icon {
+    font-size: 1.6rem;
+    color: inherit;
+    line-height: 1;
+  }
 
-    &__nav {
-      display: none; // Ocultamos la navegación en pantallas pequeñas (se implementará menú móvil más adelante).
+  &__nav-label {
+    color: inherit;
+    list-style: none;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0.75rem 1rem;
+
+    &__nav-list {
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    &__nav-link {
+      font-size: 0.85rem;
     }
   }
 }
