@@ -6,7 +6,7 @@
     "ogImage": "/images/og-image-homepage.jpg"
   },
   "siteIdentity": {
-    "logoPrincipal": "/images/logos/logo-grande.png"
+    "logoPrincipal": "/images/logos/logo-hero.svg"
   },
   "navigation": [
     { "label": "Home", "href": "#" },
@@ -52,7 +52,7 @@
   },
   "content": {
     "hero": {
-      "logoSrc": "/images/logos/logo-blanco.png",
+      "logoSrc": "/images/logos/logo-hero.svg",
       "title": "Ingeniería y Diseño Para un Futuro Digital",
       "subtitle": "Creamos experiencias web memorables que combinan estética sofisticada y rendimiento excepcional.",
       "ctaText": "Nuestros Proyectos",

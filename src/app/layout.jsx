@@ -1,8 +1,8 @@
 // src/app/layout.jsx
 
 import Footer from '@/components/layout/Footer/Footer';
+import Header from '@/components/layout/Header/Header'
 import { getHomepageData } from '@/lib/cms'; // Importamos la función
-import { FaFacebook } from 'react-icons/fa6';
 import './globals.scss';
 
 export const metadata = {
