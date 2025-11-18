@@ -1,11 +1,7 @@
 // src/components/sections/Services/Services.scss
 .services {
   padding: 80px 0;
-  background-image: url('/bg.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-blend-mode: multiply;
+  background-color: var(--color-gris-calido);
 
   &__container {
     max-width: 1200px;
@@ -23,27 +19,22 @@
     text-transform: uppercase;
     margin-bottom: 12px;
     letter-spacing: 0.5px;
-    color: var(--color-gris-calido);
+    color: var(--color-negro-suave);
   }
 
   &__subtitle {
     font-size: 1rem;
-    color: rgba(245, 245, 245, 0.9);
+    color: #555;
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.6;
   }
 
   &__grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-
-  &__grid > .service-item {
-    flex: 1 1 240px;
-    max-width: 280px;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    align-items: stretch;
   }
 
   @media (max-width: 768px) {
