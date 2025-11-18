@@ -40,7 +40,8 @@
       "socials": [
         { "icon": "linkedin", "url": "https://www.linkedin.com/", "label": "LinkedIn" },
         { "icon": "xtwitter", "url": "https://twitter.com/", "label": "X (Twitter)" },
-        { "icon": "github", "url": "https://github.com/", "label": "GitHub" }
+        { "icon": "github", "url": "https://github.com/", "label": "GitHub" },
+        { "icon": "facebook", "url": "https://facebook.com/", "label": "Facebook"}
       ]
     },
     "copyrightText": "© {year} Ingeniería Web Miranda. All rights reserved.",

@@ -11,6 +11,7 @@ import {
   FiShield,
   FiCreditCard,
 } from 'react-icons/fi';
+import { FaLinkedin, FaGithub, FaXTwitter, FaFacebook, FaGlobe } from 'react-icons/fa6';
 import './Header.scss';
 
 const iconLibrary = {
@@ -24,6 +25,14 @@ const iconLibrary = {
   wallet: FiCreditCard,
 };
 
+const socialIconLibrary = {
+  linkedin: FaLinkedin,
+  github: FaGithub,
+  xtwitter: FaXTwitter,
+  twitter: FaXTwitter,
+  facebook: FaFacebook,
+};
+
 const normalizeKey = (value = '') => value.toLowerCase().replace(/\s+/g, '');
 
 const getIconComponent = (link) => {
@@ -34,7 +43,17 @@ const getIconComponent = (link) => {
   return iconLibrary[labelKey] || FiHome;
 };
 
-const Header = ({ navLinks }) => {
+const getSocialIcon = (item) => {
+  if (React.isValidElement(item.icon)) {
+    return item.icon;
+  }
+
+  const iconKey = normalizeKey(item.icon || item.label || '');
+  const Icon = socialIconLibrary[iconKey] || FaGlobe;
+  return <Icon />;
+};
+
+const Header = ({ navLinks, socialLinks }) => {
   const handleNavClick = (e, href) => {
     // Solo para enlaces internos (anclas)
     if (href.startsWith('#')) {
@@ -81,6 +100,22 @@ const Header = ({ navLinks }) => {
               );
             })}
           </ul>
+          {Boolean(socialLinks?.length) && (
+            <div className="header__social" aria-label="Redes sociales">
+              {socialLinks.map((item) => (
+                <a
+                  key={item.url}
+                  href={item.url}
+                  className="header__social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={item.label || item.icon}
+                >
+                  {getSocialIcon(item)}
+                </a>
+              ))}
+            </div>
+          )}
         </nav>
       </div>
     </header>
