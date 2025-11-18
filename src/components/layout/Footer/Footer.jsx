@@ -67,6 +67,7 @@ const Footer = ({ footerData }) => {
           <div className="footer__socials">
             {contactInfo.socials.map((social) => {
               const Icon = iconMap[social.icon];
+              if (!Icon) return null;
               return (
                 <a key={social.icon} href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.label}>
                   <Icon />

@@ -1,6 +1,5 @@
 // src/app/layout.jsx
 
-import Header from '@/components/layout/Header/Header';
 import Footer from '@/components/layout/Footer/Footer';
 import { getHomepageData } from '@/lib/cms'; // Importamos la función
 import { FaFacebook } from 'react-icons/fa6';

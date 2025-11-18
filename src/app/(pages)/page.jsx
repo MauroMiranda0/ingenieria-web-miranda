@@ -8,15 +8,21 @@ import Portfolio from '@/components/sections/Portfolio/Portfolio';
 import Testimonials from '@/components/sections/Testimonials/Testimonials';
 import Contact from '@/components/sections/Contact/Contact';
 import { getHomepageData } from '@/lib/cms';
+import Header from '@/components/layout/Header/Header';
 
 export default async function HomePage() {
-  const { hero, about, services, portfolio, testimonials, contact } = (await getHomepageData()).content;
+  const { content, siteIdentity, footer, navigation } = await getHomepageData();
+  const { hero, about, services, portfolio, testimonials, contact } = content;
+  const heroLogo = footer?.logoBlanco || siteIdentity?.logoPrincipal;
+  const socialLinks = footer?.contactInfo?.socials || [];
 
   return (
     <main>
-      {/* La sección Hero no necesita animación de scroll */}
-      <Hero {...hero} />
+      {/* Barra de navegación antes del hero */}
+      <Header navLinks={navigation} socialLinks={socialLinks} />
 
+      {/* La sección Hero no necesita animación de scroll */}
+      <Hero {...hero} logoSrc={heroLogo} logoAlt="Ingenieria Web Miranda" />
       {/* 2. Envolver cada sección con AnimateOnScroll */}
       <AnimateOnScroll>
         <About {...about} />

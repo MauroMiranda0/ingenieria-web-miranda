@@ -135,6 +135,6 @@ const Header = ({ navLinks, socialLinks }) => {
       </div>
     </header>
   );
-};
+}
 
 export default Header;

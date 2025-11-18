@@ -45,7 +45,7 @@
     font-size: 3rem;
     font-weight: 400;
     margin-bottom: 1rem;
-    line-height: 1.2;
+    line-height: 1.5;
     color: #FFFFFF;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   }
@@ -83,6 +83,7 @@
 
   @media (max-width: 768px) {
     min-height: 70vh;
+    &__logo-image { max-width: 200px; }
     &__title { font-size: 2.8rem; }
     &__subtitle { font-size: 1.1rem; }
   }
@@ -90,6 +91,7 @@
   @media (max-width: 480px) {
     min-height: 60vh;
     padding: 2rem 1rem;
+    &__logo-image { max-width: 170px; }
     &__title { font-size: 2.2rem; }
     &__subtitle { font-size: 1rem; }
     &__logo-container { margin-bottom: 1.5rem; }
