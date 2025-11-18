@@ -27,7 +27,7 @@ const Hero = ({ title, subtitle, ctaText, ctaLink, backgroundImage, logoSrc }) =
           </div>
         )}
         <h1 id="hero-title" className="hero__title">{title}</h1>
-        <p className="hero__subtitle">{subtitle}</p>
+        {/* <p className="hero__subtitle">{subtitle}</p> */}
         {ctaText && ctaLink && (
           <Link href={ctaLink} className="hero__cta">
             {ctaText}

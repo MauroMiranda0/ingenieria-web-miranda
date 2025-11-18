@@ -55,7 +55,7 @@
       "logoSrc": "/images/logos/logo-blanco.png",
       "title": "Ingeniería y Diseño Para un Futuro Digital",
       "subtitle": "Creamos experiencias web memorables que combinan estética sofisticada y rendimiento excepcional.",
-      "ctaText": "Descubre Nuestros Proyectos",
+      "ctaText": "Nuestros Proyectos",
       "ctaLink": "/proyectos",
       "backgroundImage": "/images/hero-background-2.png"
     },
@@ -67,7 +67,7 @@
       ],
       "ctaText": "Descubre Quiénes Somos",
       "ctaLink": "/sobre-nosotros",
-      "image": "/images/feature-2.png"
+      "image": "/images/feature-1.png"
     },
     "services": {
       "title": "Nuestros Servicios",

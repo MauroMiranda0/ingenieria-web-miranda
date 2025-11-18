@@ -16,11 +16,18 @@ export default async function RootLayout({ children }) {
   // Extraemos siteIdentity, navigation, y footer
   const { siteIdentity, navigation, footer } = homepageData;
   const socialLinks = [
-    ...(footer?.contactInfo?.socials || [])
+    ...(footer?.contactInfo?.socials || []),
+    { icon: <FaFacebook />, url: 'https://facebook.com/', label: 'Facebook' },
   ];
 
   return (
     <html lang="es">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+      </head>
       <body>
         {/* Pasamos el logo principal al Header */}
         <Header

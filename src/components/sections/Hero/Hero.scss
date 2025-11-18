@@ -32,7 +32,6 @@
     align-items: center;
   }
 
-  // --- NUEVOS ESTILOS PARA EL LOGO ---
   &__logo-container {
     margin-bottom: 2rem;
   }
@@ -41,11 +40,10 @@
     max-width: 100px; // Tamaño máximo del logo
     height: auto;
   }
-  // --- FIN DE NUEVOS ESTILOS ---
 
   &__title {
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 400;
     margin-bottom: 1rem;
     line-height: 1.2;
     color: #FFFFFF;
@@ -64,6 +62,7 @@
 
   &__cta {
     display: inline-block;
+    margin-top: 2.5rem;
     padding: 0.9rem 2.5rem;
     font-size: 1rem;
     font-weight: 600;
