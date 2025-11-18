@@ -16,8 +16,7 @@ export default async function RootLayout({ children }) {
   // Extraemos siteIdentity, navigation, y footer
   const { siteIdentity, navigation, footer } = homepageData;
   const socialLinks = [
-    ...(footer?.contactInfo?.socials || []),
-    { icon: <FaFacebook />, url: 'https://facebook.com/', label: 'Facebook' },
+    ...(footer?.contactInfo?.socials || [])
   ];
 
   return (

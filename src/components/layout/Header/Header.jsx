@@ -1,7 +1,7 @@
 // src/components/layout/Header/Header.jsx
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import {
   FiHome,
   FiInfo,
@@ -10,6 +10,8 @@ import {
   FiMail,
   FiShield,
   FiCreditCard,
+  FiMenu,
+  FiX,
 } from 'react-icons/fi';
 import { FaLinkedin, FaGithub, FaXTwitter, FaFacebook, FaGlobe } from 'react-icons/fa6';
 import './Header.scss';
@@ -54,6 +56,8 @@ const getSocialIcon = (item) => {
 };
 
 const Header = ({ navLinks, socialLinks }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const handleNavClick = (e, href) => {
     // Solo para enlaces internos (anclas)
     if (href.startsWith('#')) {
@@ -72,12 +76,23 @@ const Header = ({ navLinks, socialLinks }) => {
         targetElement.scrollIntoView({ behavior: 'smooth' });
       }
     }
+
+    setIsMenuOpen(false);
   };
 
   return (
     <header className="header">
       <div className="header__container">
-        <nav className="header__nav" aria-label="Navegación principal">
+        <button
+          type="button"
+          className="header__menu-toggle"
+          aria-expanded={isMenuOpen}
+          aria-label="Abrir o cerrar menú de navegación"
+          onClick={() => setIsMenuOpen((prev) => !prev)}
+        >
+          {isMenuOpen ? <FiX /> : <FiMenu />}
+        </button>
+        <nav className={`header__nav ${isMenuOpen ? 'header__nav--open' : ''}`} aria-label="Navegación principal">
           <ul className="header__nav-list">
             {(navLinks || []).map((link) => {
               const Icon = getIconComponent(link);
