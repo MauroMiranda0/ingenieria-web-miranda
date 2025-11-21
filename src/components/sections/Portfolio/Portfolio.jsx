@@ -58,34 +58,42 @@ const Portfolio = ({ title, subtitle, filters, items }) => {
           </ul>
 
           <div className="portfolio__items">
-            {filteredItems.map((item, index) => (
-              <div key={item.id} className="portfolio__item">
-                {/* 6. El evento onClick ahora abre el Lightbox */}
-                <div className="portfolio__item-inner" onClick={() => openLightbox(index)}>
-                  <Image
-                    src={item.thumbnail}
-                    alt={item.title}
-                    fill
-                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                    className="portfolio__item-img"
-                  />
-                  <div className="portfolio__item-info">
-                    <h3>{item.title}</h3>
-                    {/* Ya no necesitamos un <a> aquí, solo el icono */}
-                    <div className="preview" aria-label={`Ver imagen ampliada de ${item.title}`}>
-                      <Image src="/images/portfolio/expand.png" alt="Expandir" width={28} height={28} />
+            {filteredItems.map((item, index) => {
+              const projectUrl = item.url || '#';
+              return (
+                <div key={item.id} className="portfolio__item">
+                  {/* 6. El evento onClick ahora abre el Lightbox */}
+                  <div className="portfolio__item-inner" onClick={() => openLightbox(index)}>
+                    <Image
+                      src={item.thumbnail}
+                      alt={item.title}
+                      fill
+                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                      className="portfolio__item-img"
+                    />
+                    <div className="portfolio__item-info">
+                      <a
+                        href={projectUrl}
+                        className="portfolio__link-icon"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Visitar proyecto ${item.title}`}
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <i className="fa-solid fa-link" aria-hidden="true"></i>
+                      </a>
+                      <button
+                        type="button"
+                        className="portfolio__btn"
+                        aria-label={`Abrir ${item.title}`}
+                      >
+                        +
+                      </button>
                     </div>
-                    <button
-                      type="button"
-                      className="portfolio__btn"
-                      aria-label={`Abrir ${item.title}`}
-                    >
-                      +
-                    </button>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
