@@ -71,10 +71,17 @@ const Portfolio = ({ title, subtitle, filters, items }) => {
                   />
                   <div className="portfolio__item-info">
                     <h3>{item.title}</h3>
-                    {/* Ya no necesitamos un <a> aquí, solo el ícono */}
+                    {/* Ya no necesitamos un <a> aquí, solo el icono */}
                     <div className="preview" aria-label={`Ver imagen ampliada de ${item.title}`}>
                       <Image src="/images/portfolio/expand.png" alt="Expandir" width={28} height={28} />
                     </div>
+                    <button
+                      type="button"
+                      className="portfolio__btn"
+                      aria-label={`Abrir ${item.title}`}
+                    >
+                      +
+                    </button>
                   </div>
                 </div>
               </div>
