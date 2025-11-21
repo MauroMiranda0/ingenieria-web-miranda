@@ -62,11 +62,16 @@
   &__item-inner {
     position: relative;
     overflow: hidden;
-    cursor: pointer; // <-- AÑADIDO: Indica que el elemento es clicable
+    cursor: pointer; // Indica que el elemento es clicable
+    aspect-ratio: 4 / 3;
+    border-radius: 10px;
 
     .portfolio__item-img {
+      position: absolute;
+      inset: 0;
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
       display: block;
     }
 

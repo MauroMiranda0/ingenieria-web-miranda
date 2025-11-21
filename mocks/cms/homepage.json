@@ -82,23 +82,23 @@
       ]
     },
     "portfolio": {
-      "title": "Our Works",
-      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam",
+      "title": "Nuestros Trabajos",
+      "subtitle": "Descubre algunos de los proyectos que hemos creado para impulsar el crecimiento digital de nuestros clientes.",
       "filters": [
-        { "key": "*", "label": "All Works" },
-        { "key": "animation", "label": "Animation" },
-        { "key": "business", "label": "Business" },
-        { "key": "art", "label": "Art" }
+        { "key": "*", "label": "Todos" },
+        { "key": "animation", "label": "Animación" },
+        { "key": "business", "label": "Negocios" },
+        { "key": "art", "label": "Arte" }
       ],
       "items": [
-        { "id": 1, "title": "Portfolio Item 1", "categories": ["animation"], "thumbnail": "/images/portfolio/01.jpg", "fullImage": "/images/portfolio/full.jpg" },
-        { "id": 2, "title": "Portfolio Item 2", "categories": ["business", "art"], "thumbnail": "/images/portfolio/02.jpg", "fullImage": "/images/portfolio/full.jpg" },
-        { "id": 3, "title": "Portfolio Item 3", "categories": ["animation"], "thumbnail": "/images/portfolio/03.jpg", "fullImage": "/images/portfolio/full.jpg" },
-        { "id": 4, "title": "Portfolio Item 4", "categories": ["business"], "thumbnail": "/images/portfolio/04.jpg", "fullImage": "/images/portfolio/full.jpg" },
-        { "id": 5, "title": "Portfolio Item 5", "categories": ["animation", "art"], "thumbnail": "/images/portfolio/05.jpg", "fullImage": "/images/portfolio/full.jpg" },
-        { "id": 6, "title": "Portfolio Item 6", "categories": ["business"], "thumbnail": "/images/portfolio/06.jpg", "fullImage": "/images/portfolio/full.jpg" },
-        { "id": 7, "title": "Portfolio Item 7", "categories": ["animation", "art"], "thumbnail": "/images/portfolio/07.jpg", "fullImage": "/images/portfolio/full.jpg" },
-        { "id": 8, "title": "Portfolio Item 8", "categories": ["business"], "thumbnail": "/images/portfolio/08.jpg", "fullImage": "/images/portfolio/full.jpg" }
+        { "id": 1, "title": "Proyecto 1", "categories": ["animation"], "thumbnail": "/images/portfolio/01.jpg", "fullImage": "/images/portfolio/full.jpg" },
+        { "id": 2, "title": "Proyecto 2", "categories": ["business", "art"], "thumbnail": "/images/portfolio/02.jpg", "fullImage": "/images/portfolio/full.jpg" },
+        { "id": 3, "title": "Proyecto 3", "categories": ["animation"], "thumbnail": "/images/portfolio/03.jpg", "fullImage": "/images/portfolio/full.jpg" },
+        { "id": 4, "title": "Proyecto 4", "categories": ["business"], "thumbnail": "/images/portfolio/04.jpg", "fullImage": "/images/portfolio/full.jpg" },
+        { "id": 5, "title": "Proyecto 5", "categories": ["animation", "art"], "thumbnail": "/images/portfolio/05.jpg", "fullImage": "/images/portfolio/full.jpg" },
+        { "id": 6, "title": "Proyecto 6", "categories": ["business"], "thumbnail": "/images/portfolio/06.jpg", "fullImage": "/images/portfolio/full.jpg" },
+        { "id": 7, "title": "Proyecto 7", "categories": ["animation", "art"], "thumbnail": "/images/portfolio/07.jpg", "fullImage": "/images/portfolio/full.jpg" },
+        { "id": 8, "title": "Proyecto 8", "categories": ["business"], "thumbnail": "/images/portfolio/08.jpg", "fullImage": "/images/portfolio/full.jpg" }
       ]
     },
     "testimonials": [

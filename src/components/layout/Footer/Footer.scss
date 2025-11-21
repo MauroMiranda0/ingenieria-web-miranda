@@ -22,8 +22,9 @@
     // padding: 0.5rem 1rem;
 
     img {
-      width: 180px; // Ancho deseado del logo en el footer
-      height: auto; // El alto se ajustará automáticamente
+      width: 100%;
+      max-width: 180px; // Ancho deseado del logo en el footer
+      height: auto; // El alto se ajusta automaticamente
     }
   }
 

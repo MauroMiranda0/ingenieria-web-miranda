@@ -20,9 +20,10 @@ const About = ({ title, paragraphs, ctaText, ctaLink, image }) => {
         <div className="about__image-content">
           <Image 
             src={image} 
-            alt="Ilustración sobre la agencia" 
-            width={700} // Ancho intrínseco de la imagen
-            height={550} // Alto intrínseco de la imagen
+            alt="Ilustracion sobre la agencia" 
+            width={700} // Ancho intrinseco de la imagen
+            height={550} // Alto intrinseco de la imagen
+            sizes="(min-width: 992px) 50vw, 100vw"
             className="about__image"
           />
         </div>

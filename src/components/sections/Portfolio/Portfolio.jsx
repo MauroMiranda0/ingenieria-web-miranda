@@ -65,8 +65,8 @@ const Portfolio = ({ title, subtitle, filters, items }) => {
                   <Image
                     src={item.thumbnail}
                     alt={item.title}
-                    width={400}
-                    height={300}
+                    fill
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                     className="portfolio__item-img"
                   />
                   <div className="portfolio__item-info">
