@@ -3,17 +3,17 @@ import React from 'react';
 import './BusinessSection.scss';
 
 const cardsRow1 = [
-  { icon: 'fa-book', title: 'Community Edition' },
-  { icon: 'fa-bug', title: 'Community Edition' },
-  { icon: 'fa-gears', title: 'Community Edition' },
-  { icon: 'fa-external-link', title: 'Community Edition' },
+  { icon: 'fa-solid fa-book', title: 'Community Edition' },
+  { icon: 'fa-solid fa-bug', title: 'Community Edition' },
+  { icon: 'fa-solid fa-gears', title: 'Community Edition' },
+  { icon: 'fa-solid fa-up-right-from-square', title: 'Community Edition' },
 ];
 
 const cardsRow2 = [
-  { icon: 'fa-coffee', title: 'Community Edition' },
-  { icon: 'fa-tree', title: 'Community Edition' },
-  { icon: 'fa-paper-plane-o', title: 'Community Edition' },
-  { icon: 'fa-folder-open', title: 'Community Edition' },
+  { icon: 'fa-solid fa-mug-saucer', title: 'Community Edition' },
+  { icon: 'fa-solid fa-tree', title: 'Community Edition' },
+  { icon: 'fa-regular fa-paper-plane', title: 'Community Edition' },
+  { icon: 'fa-regular fa-folder-open', title: 'Community Edition' },
 ];
 
 const description =
@@ -23,7 +23,7 @@ function Card({ icon, title }) {
   return (
     <div className="business__col">
       <div className="business__card">
-        <i className={`fa ${icon}`} aria-hidden="true"></i>
+        <i className={`${icon}`} aria-hidden="true"></i>
         <div className="business__separator" />
         <h4>{title}</h4>
         <p>{description}</p>

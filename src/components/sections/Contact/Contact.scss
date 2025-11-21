@@ -90,7 +90,7 @@
     font-size: 1rem;
     font-weight: 600;
     color: #fff;
-    background-color: var(--color-azul-petroleo);
+    background-color: var(--color-mostaza);
     border: none;
     border-radius: 0; // Botón recto
     cursor: pointer;
@@ -98,7 +98,7 @@
 
     &:hover,
     &:focus {
-      background-color: var(--color-azul-cielo);
+      background-color: var(--color-azul-petroleo);
     }
   }
 

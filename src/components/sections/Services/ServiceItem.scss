@@ -15,10 +15,14 @@
   gap: 10px;
 
   &__icon {
-    font-size: 60px;
+    font-size: 40px;
     color: var(--color-azul-cielo);
     margin-bottom: 8px;
     transition: color 0.25s ease;
+    &:hover{
+      color: var(--color-mostaza); 
+      cursor: pointer;
+    }
   }
 
   &__title {

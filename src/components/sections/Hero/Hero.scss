@@ -66,16 +66,15 @@
     padding: 0.9rem 2.5rem;
     font-size: 1rem;
     font-weight: 600;
-    color: var(--color-negro-suave);
-    background-color: var(--color-azul-cielo);
+    color: var(--color-gris-calido);
+    background-color: var(--color-mostaza);
     border-radius: 50px;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &:hover,
     &:focus {
-      background-color: var(--color-mostaza); // Usando tu nuevo color
-      transform: translateY(-3px);
+      background-color: var(--color-azul-petroleo);
       outline: 2px solid transparent;
       outline-offset: 2px;
     }
