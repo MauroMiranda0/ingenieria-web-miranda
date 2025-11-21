@@ -3,21 +3,21 @@ import React from 'react';
 import './BusinessSection.scss';
 
 const cardsRow1 = [
-  { icon: 'fa-solid fa-book', title: 'Community Edition' },
-  { icon: 'fa-solid fa-bug', title: 'Community Edition' },
-  { icon: 'fa-solid fa-gears', title: 'Community Edition' },
-  { icon: 'fa-solid fa-up-right-from-square', title: 'Community Edition' },
+  { icon: 'fa-solid fa-book', title: 'Edición Comunidad' },
+  { icon: 'fa-solid fa-bug', title: 'Edición Comunidad' },
+  { icon: 'fa-solid fa-gears', title: 'Edición Comunidad' },
+  { icon: 'fa-solid fa-up-right-from-square', title: 'Edición Comunidad' },
 ];
 
 const cardsRow2 = [
-  { icon: 'fa-solid fa-mug-saucer', title: 'Community Edition' },
-  { icon: 'fa-solid fa-tree', title: 'Community Edition' },
-  { icon: 'fa-regular fa-paper-plane', title: 'Community Edition' },
-  { icon: 'fa-regular fa-folder-open', title: 'Community Edition' },
+  { icon: 'fa-solid fa-mug-saucer', title: 'Edición Comunidad' },
+  { icon: 'fa-solid fa-tree', title: 'Edición Comunidad' },
+  { icon: 'fa-regular fa-paper-plane', title: 'Edición Comunidad' },
+  { icon: 'fa-regular fa-folder-open', title: 'Edición Comunidad' },
 ];
 
 const description =
-  'Visually explore your data through a free-form drag-and-drop canvas, a broad range of modern data visualizations, and an easy-to-use report authoring experience.';
+  'Explora tus datos con un lienzo intuitivo, visualizaciones modernas y herramientas sencillas para crear reportes.';
 
 function Card({ icon, title }) {
   return (
@@ -37,10 +37,9 @@ export default function BusinessSection() {
     <section id="business" className="business sections">
       <div className="business__container">
         <div className="business__head text-center">
-          <h1>Our Business Analytics Platform</h1>
+          <h1>Nuestra Plataforma de Analítica</h1>
           <p>
-            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+            Plataforma diseñada para explorar, visualizar y compartir insights de negocio con facilidad.
           </p>
         </div>
 
